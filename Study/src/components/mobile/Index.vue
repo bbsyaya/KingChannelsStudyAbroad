@@ -1,16 +1,21 @@
 <template>
   <div class="web-index-container">
-
-    2222
+     <Header></Header>
   </div>
 </template>
 <script>
+import Header from './common/Header.vue';
 
+import '../../assets/mobile-style/mobile.less';
 export default {
   data() {
     return {
 
     }
+  },
+
+  components:{
+    Header
   },
 
   created(){
@@ -19,9 +24,5 @@ export default {
 
 </script>
 <style lang="less">
-
-.web-index-container {
-  font-size: 14px;
-}
 
 </style>
