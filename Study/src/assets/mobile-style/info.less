@@ -1,0 +1,194 @@
+//首页样式
+@fs:0.28rem;
+//预设样式
+@primary:#03ace8;
+@info:#00698b;
+
+
+// 预设类
+.pr() {
+	position: relative;
+	left: 0;
+	top: 0;
+}
+
+.pa(@left,@top) {
+	position: absolute;
+	left: @left;
+	top: @top;
+}
+
+.pf() {
+	position: fixed;
+   	bottom: 0;
+   	left: 0;
+}
+
+.mc() {
+	margin: 0 auto;
+}
+
+.flex(@arrow) {
+    display: flex;
+ 	justify-content: @arrow;
+ 	align-items: center;
+}
+
+
+.flex-center() {
+    display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+}
+
+.text-ess(@linenum) {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: @linenum;
+	overflow: hidden;
+}
+
+.m-info {
+    width: 100%;
+    height: auto;
+    min-height: 3rem;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .m-info-img {
+        height: 3rem;
+        width: 100%;
+    }
+
+    .m-info-list {
+        width: 100%;
+        height: auto;
+        padding: 0.05rem 0;
+        border-bottom: 0.01rem solid #999;
+        li {
+            .flex(space-between);
+            font-size: 0.26rem;
+            line-height: 0.32rem;
+            padding-left: 0.1rem;
+            section {
+                .text-ess(1);
+            }
+            & > section:nth-of-type(1) {
+               width: 4.1rem;
+            }
+
+            & > section:nth-of-type(2) {
+               width: 1.4rem;
+            }
+
+            & > section:nth-of-type(3) {
+               width: 1.15rem;
+            }
+        }
+
+        li:before {
+            content: '◇';
+            font-size: 0.3rem;
+        }
+    }
+
+    .m-papagation {
+        .flex(flex-end);
+        width: 100%;
+        height: 0.5rem;
+        ul {
+           .flex(flex-start);
+           li {
+            .flex-center();
+            width: 0.3rem;
+            height: 0.3rem;
+            margin-right: 0.07rem;
+            color:white;
+            background: #bdbdbd;
+           }
+        }
+
+        .pag-active {
+            background: #000;
+        }
+
+    }
+    .m-info-newest {
+        height: 2rem;
+        width:  7.3rem;
+        margin: 0.1rem auto;
+        font-size: 0.2rem;
+        line-height: 0.28rem;
+        .text-ess(7);
+    }
+
+
+    .m-info-detail {
+        height: auto;
+        min-height: 1rem;
+        padding-bottom: 0.1rem;
+        border-bottom: 0.02rem solid #9a9a9a;
+        margin-bottom: 0.1rem;
+        .m-info-detail-title {
+            // height: 1rem;
+            overflow: hidden;
+            padding-bottom: 0.1rem;
+            border-bottom: 0.02rem solid #9a9a9a;
+            margin-bottom: 0.1rem;
+            h1 {
+               height: 0.65rem;
+               line-height: 0.65rem;
+               font-size: 0.36rem;
+               .text-ess(1);
+               color:#333;
+               padding: 0 0.1rem;
+            }
+
+            p {
+                height: 0.35rem;
+                font-size: 0.23rem;
+                color:#969696;
+                text-align: center;
+            }
+        }
+
+        .m-info-detail-contain {
+            height: auto;
+            padding-bottom: 0.1rem;
+            p {
+                padding: 0 0.1rem;
+                font-size: 0.26rem;
+                line-height: 0.4rem;
+            }
+        }
+    }
+
+    .m-info-share {
+        .flex(flex-start);
+        width: 7.3rem;
+        height: 0.5rem;
+        margin: 0 auto;
+        li {
+            .flex(flex-start);
+            font-size: 0.14rem;
+            margin: 0 0.01rem;
+            img {
+                width: 0.22rem;
+                height: 0.22rem;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+

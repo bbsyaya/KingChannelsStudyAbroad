@@ -229,6 +229,8 @@ export default {
 
         created() {
            this.isPC = isPC();
+
+           if(!this.isPC) this.$router.push('/mobile')
         }
 
 }

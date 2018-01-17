@@ -9,7 +9,17 @@ export default [
           	path: 'index',
 		    name: '首页',
 		    component: resolve => require.ensure([], () => resolve(require('@/components/mobile/Index')), 'index'),
-          }
+          },
+          {
+          	path: 'info',
+		    name: '资讯',
+		    component: resolve => require.ensure([], () => resolve(require('@/components/mobile/info')), 'index'),
+          },
+          {
+          	path: 'infoDetail',
+		    name: '资讯',
+		    component: resolve => require.ensure([], () => resolve(require('@/components/mobile/InfoDetail')), 'index'),
+          },
 	    ]
 	  }
   ]

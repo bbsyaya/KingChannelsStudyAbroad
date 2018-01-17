@@ -17,12 +17,10 @@
        </section>
     </section>
 
-    
     <section class="m-study-yiyi">
        <img src="../../assets/mobile-images/shou.png" alt="">
     </section>
 
-    
     <!-- 留学动态 -->
     <section class="m-section">
        <section class="m-section-cont">
@@ -191,6 +189,68 @@
             {{index % 2 == 0 ? '普林顿大学' : '哥伦比亚大学'}}
           </li>
        </ul>
+    </section>
+
+
+
+    <!-- 公司能力 -->
+    <section class="m-section" style="margin-top:0.05rem">
+       <section class="m-section-cont">
+          <b>公司能力</b>
+          <span>测试文字</span>
+
+       </section>
+    </section>
+
+    <section class="m-company-power">
+      <section class="m-company-power-section1">
+        <ul class="m-company-power-section1-left">
+          <li>
+            <img src="../../assets/mobile-images/nengli1.png" alt="">
+            <span class="m-item-metion">说明文字</span>
+          </li>
+          <li>
+            <img src="../../assets/mobile-images/nengli2.png" alt="">
+            <span class="m-item-metion">说明文字</span>
+          </li>
+          <li>
+            <img src="../../assets/mobile-images/nengli3.png" alt="">
+            <span class="m-item-metion">说明文字</span>
+          </li>
+        </ul>
+
+        <ul class="m-company-power-section1-right">
+          <li>
+            <img src="../../assets/mobile-images/nengli4.png" alt="">
+            <span class="m-item-metion">说明文字</span>
+          </li>
+          <li>
+            <img src="../../assets/mobile-images/nengli5.png" alt="">
+            <span class="m-item-metion">说明文字</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="m-company-power-section2">
+        <section class="m-company-power-section2-left">
+          <!-- <img src="../../assets/mobile-images/nengli5.png" alt=""> -->
+          <span class="m-item-metion">说明文字</span>
+        </section>
+        <ul class="m-company-power-section2-right">
+          <li>
+            <img src="../../assets/mobile-images/nengli6.png" alt=""><span class="m-item-metion">说明文字</span></li>
+          <li>
+            <img src="../../assets/mobile-images/nengli7.png" alt=""><span class="m-item-metion">说明文字</span></li>
+        </ul>
+      </section>
+
+      <ul class="m-company-power-section3">
+        <li>
+          <img src="../../assets/mobile-images/nengli8.png" alt=""><span class="m-item-metion">说明文字</span></li>
+        <li>
+          <img src="../../assets/mobile-images/nengli9.png" alt=""><span class="m-item-metion">说明文字</span>
+        </li>
+      </ul>
     </section>
 
 

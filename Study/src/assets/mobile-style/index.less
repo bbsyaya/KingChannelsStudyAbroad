@@ -119,6 +119,15 @@
 			background: @primary;
 			color:white;
 		}
+
+        .m-bread-nav {
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+            line-height: 0.55rem;
+            color:#c5c5c5;
+        }
 	}
 }
 
@@ -329,7 +338,7 @@
     		p {
     			.text-ess(2);
     			font-size: 0.2rem;
-    			
+
     			span {
     				font-size: 0.24rem;
     				padding: 0.02rem 0.1rem ;
@@ -391,6 +400,119 @@
     .m-hot-active {
       background: #f6b554 !important;
       border: 0.01rem solid #f79a00;
+    }
+}
+
+
+//公司能力
+.m-company-power {
+    .mc();
+    width: 7.3rem;
+    height: auto;
+    min-height: 1.23rem;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    li {
+        .pr();
+    }
+    .m-company-power-section1 {
+        .flex(space-between);
+        height: 4.7rem;
+        width: 100%;
+        .m-company-power-section1-left {
+            width: 3.2rem;
+            height: 100%;
+            li {
+                height: 1.5rem;
+                box-sizing: border-box;
+                border: 0.02rem solid #000;
+                margin-bottom: 0.1rem;
+            }
+        }
+
+        .m-company-power-section1-right {
+            width: 4rem;
+            height: 100%;
+            li {
+                box-sizing: border-box;
+                border: 0.02rem solid #000;
+                margin-bottom: 0.1rem;
+            }
+
+            li:nth-of-type(1) {
+                height: 1.75rem;
+            }
+
+            li:nth-of-type(2) {
+                height: 2.85rem;
+            }
+        }
+
+    }
+
+
+    .m-company-power-section2 {
+        .flex(space-between);
+        height: 4.7rem;
+        width: 100%;
+        margin-top: 0.1rem;
+
+        .m-company-power-section2-left {
+            .pr();
+            width: 4rem;
+            height: 100%;
+            box-sizing: border-box;
+            border: 0.02rem solid #000;
+        }
+
+        .m-company-power-section2-right {
+            width: 3.2rem;
+            height: 100%;
+            li {
+                box-sizing: border-box;
+                border: 0.02rem solid #000;
+                margin-bottom: 0.1rem;
+            }
+
+            li:nth-of-type(1) {
+                height: 1.75rem;
+            }
+
+            li:nth-of-type(2) {
+                height: 2.85rem;
+            }
+        }
+    }
+
+    .m-company-power-section3 {
+        .flex(space-between);
+        margin: 0.1rem 0;
+        height: 2.85rem;
+        width: 100%;
+        li {
+            width: 3.6rem;
+            height: 100%;
+            box-sizing: border-box;
+            border: 0.02rem solid #000;
+            margin: 0.1rem 0;
+        }
+    }
+
+
+    .m-item-metion {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 0.4rem;
+        width: 100%;
+        background: #000;
+        opacity: 0.6;
+        text-align: center;
+        line-height: 0.4rem;
+        color: white;
+        font-size: 0.26rem;
     }
 }
 
