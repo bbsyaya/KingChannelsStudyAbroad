@@ -1,4 +1,53 @@
 //首页样式
+@fs:0.28rem;
+//预设样式
+@primary:#03ace8;
+@info:#00698b;
+
+
+// 预设类
+.pr() {
+	position: relative;
+	left: 0;
+	top: 0;
+}
+
+.pa(@left,@top) {
+	position: absolute;
+	left: @left;
+	top: @top;
+}
+
+.pf() {
+	position: fixed;
+   	bottom: 0;
+   	left: 0;
+}
+
+.mc() {
+	margin: 0 auto;
+}
+
+.flex(@arrow) {
+    display: flex;
+ 	justify-content: @arrow;
+ 	align-items: center;
+}
+
+
+.flex-center() {
+    display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+}
+
+.text-ess(@linenum) {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: @linenum;
+	overflow: hidden;
+}
+
 .m-swipe {
 	height: 3rem;
 	width: 100%;
@@ -33,11 +82,317 @@
 }
 
 
+.m-section {
+	.flex-center();
+	height: 0.6rem;
+	width: 100%;
+	.m-section-cont {
+		.flex(flexStart);
+		.pr();
+		width: 100%;
+		height: 0.46rem;
+		box-sizing: border-box;
+		border-left: 0.07rem solid @primary;
+		b {
+			margin-left: 0.05rem;
+			font-size: 0.34rem;
+			font-weight: normal;
+		}
+
+		span {
+			display: inline-block;
+			margin: 0.1rem 0 0 0.15rem;
+			font-size: 0.16rem;
+			color:#c5c5c5;
+		}
+
+		i {
+			font-style: normal;
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 1.5rem;
+			height: 100%;
+			line-height: 0.46rem;
+			font-size: 0.12rem;
+			text-align: center;
+			background: @primary;
+			color:white;
+		}
+	}
+}
+
+
+.m-study-yiyi {
+	.mc();
+	height: 7.6rem;
+	width: 6.76rem;
+	img {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+
+.m-study-new-act {
+	.flex(space-between);
+    height: 0.4rem;
+    width: 100%;
+    background: @info;
+    color:white;
+    padding: 0 0.1rem;
+}
+
+.m-study-new-act-noimg {
+    .mc();
+	height: 1.8rem;
+	width: 7.3rem;
+	box-sizing: border-box;
+	border-bottom: 0.01rem solid #010101;
+    h3,p {
+    	font-size: .13rem;
+    }
+
+    h3 {
+    	height: 0.43rem;
+    	line-height: 0.5rem;
+    }
+
+    p {
+    	.pr();
+    	.text-ess(4);
+		line-height: 0.32rem;
+    }
+
+    span {
+        position: absolute;
+        right: 0;
+        bottom: -0.03rem;
+    	color:red;
+    	text-decoration: underline;
+    	background: white;
+    }
+
+    i {
+    	position: absolute;
+        right: 0.9rem;
+        bottom: -0.02rem;
+        width: 1.6rem;
+        background: white;
+    }
+}
 
 
 
+.m-study-new-act-hasimg {
+	.mc();
+	margin-top: 0.2rem;
+	.flex(space-between);
+	height: 2.04rem;
+	width: 7.3rem;
+	figure {
+		width: 3.03rem;
+		height: 100%;
+		img {
+			width: 100%;
+		    height: 100%;
+		}
+	}
+
+	section {
+		width: 4.03rem;
+        height: 100%;
+        h3 {
+        	.flex(space-between);
+        	width: 100%;
+            font-weight: 400;
+            padding-bottom: 0.05rem;
+            font-size: 0.22rem;
+            line-height: 0.24rem;
+            border-bottom: 0.01rem solid #010101;
+            i {
+            	font-style: normal;
+            	color:red;
+            	margin-top: 0.02rem
+            }
+        }
+
+        p {
+        	height: 1.4rem;
+        	margin-top: 0.15rem;
+	    	.text-ess(5);
+			line-height: 0.28rem;
+			font-size: 0.2rem;
+        }
+	}
+}
 
 
+
+.m-study-prefecture {
+	display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    .mc();
+    width: 7.3rem;
+    height: auto;
+    min-height: 0.5rem;
+
+    li {
+    	width: 3.55rem;
+    	height: 5.45rem;
+    	margin-top: 0.23rem;
+    	figure {
+    		.pr();
+    		height: 3.77rem;
+    		background: green;
+    		img {
+    			width: 100%;
+    			height: 100%;
+    		}
+            div {
+            	position: absolute;
+            	left: 0;
+            	bottom: 0;
+            	width: 100%;
+            	height: 0.4rem;
+            	line-height: 0.4rem;
+            	text-align: center;
+            	background: #eee;
+            	opacity: 0.8;
+            }
+
+    	}
+
+    	h3 {
+        	.flex(space-between);
+        	margin-top: 0.1rem;
+        	width: 100%;
+            font-weight: 400;
+            padding-bottom: 0.05rem;
+            font-size: 0.22rem;
+            line-height: 0.24rem;
+            border-bottom: 0.01rem solid #010101;
+            i {
+            	font-style: normal;
+            	color:red;
+            	margin-top: 0.02rem
+            }
+        }
+
+
+        p {
+           height: 1.13rem;
+           line-height: 0.3rem;
+           font-size: 0.2rem;
+           margin-top: 0.1rem;
+           .text-ess(4);
+        }
+    }
+}
+
+//热门院校
+.m-hot-schools {
+	display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    .mc();
+    width: 7.3rem;
+    height: auto;
+    min-height: 0.5rem;
+
+    li {
+    	.flex(space-between);
+    	height: 1.1rem;
+    	width: 3.55rem;
+    	margin-bottom: 0.1rem;
+    	figure {
+    		width: 1.64rem;
+    		height: 100%;
+    		margin-right: 0.1rem;
+    		img {
+    			width: 100%;
+    			height: 100%;
+    		}
+    	}
+
+    	section {
+    		width: 1.8rem;
+    		height: 1.1rem;
+    		h3 {
+    			font-size: 0.26rem;
+    			line-height: 0.28rem;
+    			font-weight: 400;
+    			.text-ess(1);
+    		}
+
+    		p {
+    			.text-ess(2);
+    			font-size: 0.2rem;
+    			
+    			span {
+    				font-size: 0.24rem;
+    				padding: 0.02rem 0.1rem ;
+    				background: #bbb;
+    				color:white
+    			}
+    		}
+
+    		p:nth-of-type(1) {
+    			line-height: 0.24rem;
+    		}
+    	}
+    }
+}
+
+
+.m-schools-top {
+	.flex(flex-start);
+	align-items: flex-start;
+	margin-top: 0.2rem;
+    // .mc();
+    // width: 7.3rem;
+    height: auto;
+    min-height: 1.23rem;
+
+    .m-schools-top-type {
+    	// text-align: center;
+    	height: 1.23rem;
+    	line-height: 1.23rem;
+    	width: 2.7rem;
+    	font-size: 0.31rem;
+    	margin-left: 0.1rem;
+    	.text-ess(1);
+    	white-space: nowrap;
+    	span {
+    		font-size: 0.2rem;
+    	}
+    }
+
+    .m-schools-top-list {
+    	width: 4.7rem;
+    	height: auto;
+    	padding-left: 0.1rem;
+    	min-height: 1.23rem;
+    	box-sizing: border-box;
+    	border-left: 0.03rem solid @primary;
+
+    	.flex(flex-start);
+    	flex-wrap: wrap;
+    	li {
+    		margin:0 0.07rem 0.07rem 0;
+    		background: #d8d8d8;
+    		border: 0.01 solid #ccc;
+    		border-radius: 0.05rem;
+    		padding: 0.05rem;
+    	}
+    }
+
+    .m-hot-active {
+      background: #f6b554 !important;
+      border: 0.01rem solid #f79a00;
+    }
+}
 
 
 
