@@ -10,6 +10,11 @@ Vue.config.productionTip = false
 
 import axios from "./http.js"
 Vue.prototype.$http = axios;
+
+
+import { Swipe, SwipeItem } from 'mint-ui';
+Vue.component(Swipe.name, Swipe);
+Vue.component(SwipeItem.name, SwipeItem);
 //路由跳转如果要跳转到页面的顶部，必须要使用下面的方式，让新的页面跳转到页面顶部
 
 // router.beforeEach((to,from,next)=>{
