@@ -1,56 +1,115 @@
-//首页样式
-@fs:0.28rem;
-//预设样式
-@primary:#03ace8;
-@info:#00698b;
+
+.m-xiaxiao {
+   img {
+		width: 100%;
+		height: 100%;
+	}
+	height: auto;
+	width: 100%;
+	min-height: 4rem;
+
+	.m-coopuni-banner {
+        height: 4rem;
+        width: 100%;
+    }
+
+    .m-xiaxiao-step {
+    	padding-bottom: 0.1rem;
+    	border-bottom: 0.01rem solid #999;
+    	width: 100%;
+    	height: 3.8rem;
+    }
 
 
-// 预设类
-.pr() {
-	position: relative;
-	left: 0;
-	top: 0;
-}
+    .m-xiaxiao-search {
+    	.flex(flex-start);
+    	height: 0.42rem;
+    	width: 100%;
+    	margin: 0.1rem 0 0.2rem 0;
+    	span {
+    		margin-right: 0.1rem;
+    		border-radius: 0.05rem;
+    		background: @primary;
+            padding: 0.02rem 0.1rem;
+            color:white
+    	}
 
-.pa(@left,@top) {
-	position: absolute;
-	left: @left;
-	top: @top;
-}
+    	input {
+    		height: 0.33rem;
+    		width: 2rem;
+    		border: 0.03rem solid @primary;
+			outline: none;
+    	}
 
-.pf() {
-	position: fixed;
-   	bottom: 0;
-   	left: 0;
-}
-
-.mc() {
-	margin: 0 auto;
-}
-
-.flex(@arrow) {
-    display: flex;
- 	justify-content: @arrow;
- 	align-items: center;
-}
-
-
-.flex-center() {
-    display: flex;
- 	justify-content: center;
- 	align-items: center;
-}
-
-.text-ess(@linenum) {
-	display: -webkit-box;
-	-webkit-box-orient: vertical;
-	-webkit-line-clamp: @linenum;
-	overflow: hidden;
-}
+    	i {
+    		font-style: normal;
+    		// width: 0.95rem;
+    		height: 0.33rem;
+    		background: @primary;
+    		color:white;
+    		text-align: center;
+    		line-height: 0.33rem;
+    	}
+    }
 
 
-.m-contactus {
+    .m-xiaxiao-item {
+    	.mc();
+    	.flex(space-between);
+    	border-bottom: 0.01rem solid #999;
+    	padding-bottom: 0.1rem;
+    	align-items: flex-start;
+    	margin-bottom: 0.2rem;
+    	width: 7.3rem;
+    	height: auto;
+    	.m-xiaxiao-item-logo {
+    		width: 3.28rem;
+    		height: 3.28rem;
+    		background: red;
+    	}
 
+    	.m-xiaxiao-item-detail {
+    		width: 3.93rem;
+    		height: 100%;
+
+    		p {
+    			.pr();
+    			font-size: 0.24rem;
+    			line-height: 0.34rem;
+    			span {
+    				position: absolute;
+    				right: 0;
+    				top: 0;
+    				padding: 0 0.2rem;
+    				background: red;
+    				color:white;
+    			}
+
+    			i {
+    				color:red;
+    				text-decoration: underline;
+    				font-style: normal;
+    			}
+    		}
+    	}
+    }
+
+    table {
+    	.mc();
+    	margin-bottom: 0.2rem;
+    	width: 7.3rem;
+    	border-collapse: collapse;
+    	th,td {
+    		height: 0.4rem;
+    		border: 0.01rem solid #999;
+    	}
+    	th {
+    		background: #00afe9;
+    	}
+    	td {
+    		text-align: center;
+    	}
+    }
 }
 
 

@@ -1,59 +1,99 @@
-//首页样式
-@fs:0.28rem;
-//预设样式
-@primary:#03ace8;
-@info:#00698b;
+
+.m-coopuni {
+	img {
+		width: 100%;
+		height: 100%;
+	}
+	height: auto;
+	width: 100%;
+	min-height: 4rem;
+
+	.m-coopuni-banner {
+        height: 4rem;
+        width: 100%;
+    }
+
+    .m-coopuni-search {
+    	.flex(flex-start);
+    	padding: 0 0.1rem;
+    	width: 100%;
+    	height: 0.65rem;
+    	font-size: 0.23rem;
+        span {
+        	width: 1.2rem;
+        }
+    	input {
+    		height: 0.33rem;
+    		width: 5.2rem;
+    		border: 0.03rem solid @primary;
+			outline: none;
+    	}
+
+    	i {
+    		font-style: normal;
+    		width: 0.95rem;
+    		height: 0.33rem;
+    		background: @primary;
+    		color:white;
+    		text-align: center;
+    		line-height: 0.33rem;
+    	}
+    }
 
 
-// 预设类
-.pr() {
-	position: relative;
-	left: 0;
-	top: 0;
+    .m-coopuni-top {
+    	.mc();
+    	width: 6.1rem;
+    	height: 7.7rem;
+    	background: red;
+    	margin-bottom: 0.1rem;
+
+    	h3 {
+    		height: 0.87rem;
+    		width: 100%;
+    		color:white;
+    		font-size: 0.28rem;
+    		line-height: 0.36rem;
+    		text-align: center;
+    		padding-top: 0.05rem;
+    		span {
+    			font-size: 0.4rem;
+    		}
+    	}
+
+    	.m-coopuni-top-list {
+    		width: 5.9rem;
+    		.mc();
+    		height: 6rem;
+    		margin: 0.2rem auto 0.12rem auto;
+    		li {
+    			.flex(space-between);
+    			height: 0.3rem;
+    			margin-bottom: 0.1rem;
+    			i {
+    				font-style: normal;
+    				display: inline-block;
+    				width: 0.3rem;
+    				color:white;
+    				margin-right: 0.1rem;
+    				line-height: 0.3rem;
+    				text-align: center;
+    			}
+    		}
+    	}
+
+    	.m-coopuni-top-btn {
+    		.mc;
+    		width: 5.9rem;
+    		height: 0.4rem;
+    		background: @primary;
+    		color:white;
+    		line-height: 0.4rem;
+    		text-align: center;
+    	}
+    }
+
 }
-
-.pa(@left,@top) {
-	position: absolute;
-	left: @left;
-	top: @top;
-}
-
-.pf() {
-	position: fixed;
-   	bottom: 0;
-   	left: 0;
-}
-
-.mc() {
-	margin: 0 auto;
-}
-
-.flex(@arrow) {
-    display: flex;
- 	justify-content: @arrow;
- 	align-items: center;
-}
-
-
-.flex-center() {
-    display: flex;
- 	justify-content: center;
- 	align-items: center;
-}
-
-.text-ess(@linenum) {
-	display: -webkit-box;
-	-webkit-box-orient: vertical;
-	-webkit-line-clamp: @linenum;
-	overflow: hidden;
-}
-
-
-.m-contactus {
-
-}
-
-
 
 
 

@@ -36,6 +36,17 @@ export default [
 		    name: '服务',
 		    component: resolve => require.ensure([], () => resolve(require('@/components/mobile/Server')), 'other'),
           },
+          {
+          	path: 'coopUni',
+		    name: '合作院校',
+		    component: resolve => require.ensure([], () => resolve(require('@/components/mobile/CoopUni')), 'other'),
+          },
+
+          {
+          	path: 'xiaxiao',
+		    name: '夏校',
+		    component: resolve => require.ensure([], () => resolve(require('@/components/mobile/Xiaxiao')), 'other'),
+          },
 	    ]
 	  }
   ]
