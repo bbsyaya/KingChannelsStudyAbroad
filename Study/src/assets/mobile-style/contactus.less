@@ -1,0 +1,87 @@
+//首页样式
+@fs:0.28rem;
+//预设样式
+@primary:#03ace8;
+@info:#00698b;
+
+
+// 预设类
+.pr() {
+	position: relative;
+	left: 0;
+	top: 0;
+}
+
+.pa(@left,@top) {
+	position: absolute;
+	left: @left;
+	top: @top;
+}
+
+.pf() {
+	position: fixed;
+   	bottom: 0;
+   	left: 0;
+}
+
+.mc() {
+	margin: 0 auto;
+}
+
+.flex(@arrow) {
+    display: flex;
+ 	justify-content: @arrow;
+ 	align-items: center;
+}
+
+
+.flex-center() {
+    display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+}
+
+.text-ess(@linenum) {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: @linenum;
+	overflow: hidden;
+}
+
+
+.m-contactus {
+    width: 100%;
+    height: auto;
+    min-height: 4rem;
+
+    .m-aboutus-banner {
+        height: 4rem;
+        width: 100%;
+    }
+
+    h2,p {
+    	.mc();
+        width: 7.3rem;
+    }
+
+    h2 {
+    	font-size: 0.26rem;
+    	line-height: 0.46rem;
+    }
+
+    p {
+    	font-size: 0.23rem;
+    	line-height: 0.32rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

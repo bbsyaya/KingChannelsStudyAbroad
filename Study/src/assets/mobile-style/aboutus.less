@@ -1,0 +1,132 @@
+//首页样式
+@fs:0.28rem;
+//预设样式
+@primary:#03ace8;
+@info:#00698b;
+
+
+// 预设类
+.pr() {
+	position: relative;
+	left: 0;
+	top: 0;
+}
+
+.pa(@left,@top) {
+	position: absolute;
+	left: @left;
+	top: @top;
+}
+
+.pf() {
+	position: fixed;
+   	bottom: 0;
+   	left: 0;
+}
+
+.mc() {
+	margin: 0 auto;
+}
+
+.flex(@arrow) {
+    display: flex;
+ 	justify-content: @arrow;
+ 	align-items: center;
+}
+
+
+.flex-center() {
+    display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+}
+
+.text-ess(@linenum) {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: @linenum;
+	overflow: hidden;
+}
+
+
+.m-aboutus {
+    width: 100%;
+    height: auto;
+    min-height: 4rem;
+
+    .m-aboutus-banner {
+        height: 4rem;
+        width: 100%;
+    }
+
+    .m-aboutus-title {
+        .flex(center);
+        height: 1.1rem;
+        width: 100%;
+        p {
+            width: 7.3rem;
+            height: 0.83rem;
+            font-size: 0.24rem;
+            line-height: 0.3rem;
+            .text-ess(3);
+        }
+    }
+
+
+    .m-aboutus-setbase {
+       .mc();
+       overflow: hidden;
+       width: 7.3rem;
+       height: auto;
+       font-size: 0.24rem;
+       line-height: 0.32rem;
+       h3 {
+        margin-bottom: 0.1rem;
+        &:nth-of-type(2) {
+            margin-top: 0.2rem;
+        }
+       }
+       p {
+         text-indent: 0.4rem;
+         margin-bottom: 0.1rem;
+       }
+    }
+
+    .m-aboutus-intro {
+        margin-top: 0.1rem;
+        width: 100%;
+        height: auto;
+        min-height: 0.9rem;
+        text-indent: 0.4rem;
+    }
+
+
+    .m-aboutus-company-abs {
+        .mc();
+       overflow: hidden;
+       width: 7.3rem;
+       h2 {
+        // font-weight: 400;
+        font-size: 0.28rem;
+        margin-top: 0.1rem;
+       }
+
+       p {
+        font-size: 0.24rem;
+        line-height: 0.3rem;
+        &:nth-of-type(2) {
+            margin-bottom: 0.1rem;
+        }
+       }
+    }
+}
+
+
+
+
+
+
+
+
+
+

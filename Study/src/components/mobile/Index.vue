@@ -233,7 +233,7 @@
 
       <section class="m-company-power-section2">
         <section class="m-company-power-section2-left">
-          <!-- <img src="../../assets/mobile-images/nengli5.png" alt=""> -->
+          <img src="../../assets/mobile-images/11.jpg" alt="">
           <span class="m-item-metion">说明文字</span>
         </section>
         <ul class="m-company-power-section2-right">

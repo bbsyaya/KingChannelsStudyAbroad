@@ -83,13 +83,16 @@
 
 
 .m-section {
-	.flex-center();
+	// .flex-center();
+    .flex(flexStart); 
 	height: 0.6rem;
 	width: 100%;
 	.m-section-cont {
 		.flex(flexStart);
 		.pr();
-		width: 100%;
+        .text-ess(1);
+        white-space: nowrap;
+		width: 7.4rem;
 		height: 0.46rem;
 		box-sizing: border-box;
 		border-left: 0.07rem solid @primary;
@@ -150,6 +153,31 @@
     background: @info;
     color:white;
     padding: 0 0.1rem;
+
+    &> span {
+        .flex(flex-start);
+    }
+}
+
+.m-study-new-act-rect {
+    display: inline-block;
+    width: 0.2rem;
+    height: 0.2rem;
+    margin: 0 0.2rem 0 0.1rem;
+    transform: rotate(45deg);
+    // margin-top: 0.1rem;
+    background: white;
+    box-sizing: border-box;
+}
+
+.m-study-new-act-fillrect {
+    display: inline-block;
+    width: 0.2rem;
+    height: 0.2rem;
+    margin: 0 0.05rem 0 0.1rem;
+    transform: rotate(45deg);
+    box-sizing: border-box;
+    border: 0.02rem solid #000;
 }
 
 .m-study-new-act-noimg {
