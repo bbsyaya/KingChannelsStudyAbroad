@@ -105,7 +105,7 @@
 		span {
 			display: inline-block;
 			margin: 0.1rem 0 0 0.15rem;
-			font-size: 0.16rem;
+			font-size: 0.22rem;
 			color:#c5c5c5;
 		}
 
@@ -117,7 +117,7 @@
 			width: 1.5rem;
 			height: 100%;
 			line-height: 0.46rem;
-			font-size: 0.12rem;
+			font-size: 0.22rem;
 			text-align: center;
 			background: @primary;
 			color:white;
@@ -140,7 +140,7 @@
     width: 100%;
     height: 0.45rem;
     font-size: 0.24rem;
-    border-bottom: 0.01rem solid @info;
+    border-bottom: 1px solid @info;
     li {
         // padding-left:0.15rem;
         // padding-right: 0.15rem;
@@ -150,7 +150,7 @@
     .m-section-filter-active {
         color:@primary;
         box-sizing: border-box;
-        border-bottom: 0.01rem solid @primary;
+        border-bottom: 1px solid @primary;
     }
 }
 
@@ -176,6 +176,13 @@
 
     }
 
+
+.m-hot-schools-nodata {
+    .flex-center();
+    width: 100%;
+    height: 100%;
+
+}
 
 .m-study-yiyi {
 	.mc();
@@ -219,28 +226,28 @@
     margin: 0 0.05rem 0 0.1rem;
     transform: rotate(45deg);
     box-sizing: border-box;
-    border: 0.02rem solid #000;
+    border: 1px solid #000;
 }
 
 .m-study-new-act-noimg {
     .mc();
-	height: 1.8rem;
+    height: auto;
+	min-height: 1.15rem;
 	width: 7.3rem;
 	box-sizing: border-box;
-	border-bottom: 0.01rem solid #010101;
-    h3,p {
-    	font-size: .13rem;
-    }
+	border-bottom: 1px solid #999;
 
     h3 {
     	height: 0.43rem;
     	line-height: 0.5rem;
+        font-size: .26rem;
     }
 
     p {
     	.pr();
     	.text-ess(4);
 		line-height: 0.32rem;
+        font-size: .22rem;
     }
 
     span {
@@ -254,9 +261,9 @@
 
     i {
     	position: absolute;
-        right: 0.9rem;
+        right: 0.82rem;
         bottom: -0.02rem;
-        width: 1.6rem;
+        width: 1.7rem;
         background: white;
     }
 }
@@ -288,7 +295,7 @@
             padding-bottom: 0.05rem;
             font-size: 0.22rem;
             line-height: 0.24rem;
-            border-bottom: 0.01rem solid #010101;
+            border-bottom: 1px solid #999;
             i {
             	font-style: normal;
             	color:red;
@@ -301,7 +308,7 @@
         	margin-top: 0.15rem;
 	    	.text-ess(5);
 			line-height: 0.28rem;
-			font-size: 0.2rem;
+			font-size: 0.22rem;
         }
 	}
 }
@@ -324,7 +331,6 @@
     	figure {
     		.pr();
     		height: 3.77rem;
-    		background: green;
     		img {
     			width: 100%;
     			height: 100%;
@@ -351,7 +357,7 @@
             padding-bottom: 0.05rem;
             font-size: 0.22rem;
             line-height: 0.24rem;
-            border-bottom: 0.01rem solid #010101;
+            border-bottom: 1px solid #999;
             i {
             	font-style: normal;
             	color:red;
@@ -386,12 +392,18 @@
     	width: 3.55rem;
     	margin-bottom: 0.1rem;
     	figure {
+            .pr();
     		width: 1.64rem;
     		height: 100%;
     		margin-right: 0.1rem;
     		img {
     			width: 100%;
     			height: 100%;
+                &:nth-of-type(1) {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
     		}
     	}
 
@@ -408,6 +420,7 @@
     		p {
     			.text-ess(2);
     			font-size: 0.2rem;
+                height: 0.48rem;
 
     			span {
     				font-size: 0.24rem;
@@ -461,7 +474,7 @@
     	li {
     		margin:0 0.07rem 0.07rem 0;
     		background: #d8d8d8;
-    		border: 0.01 solid #ccc;
+    		border: 1px solid #ccc;
     		border-radius: 0.05rem;
     		padding: 0.05rem;
     	}
@@ -469,7 +482,7 @@
 
     .m-hot-active {
       background: #f6b554 !important;
-      border: 0.01rem solid #f79a00;
+      border: 1px solid #f79a00;
     }
 }
 
@@ -497,7 +510,7 @@
             li {
                 height: 1.5rem;
                 box-sizing: border-box;
-                border: 0.02rem solid #000;
+                border: 0.01rem solid #000;
                 margin-bottom: 0.1rem;
             }
         }
@@ -507,7 +520,7 @@
             height: 100%;
             li {
                 box-sizing: border-box;
-                border: 0.02rem solid #000;
+                border: 0.01rem solid #000;
                 margin-bottom: 0.1rem;
             }
 
@@ -534,7 +547,7 @@
             width: 4rem;
             height: 100%;
             box-sizing: border-box;
-            border: 0.02rem solid #000;
+            border: 0.01rem solid #000;
         }
 
         .m-company-power-section2-right {
@@ -542,7 +555,7 @@
             height: 100%;
             li {
                 box-sizing: border-box;
-                border: 0.02rem solid #000;
+                border: 0.01rem solid #000;
                 margin-bottom: 0.1rem;
             }
 
@@ -565,7 +578,7 @@
             width: 3.6rem;
             height: 100%;
             box-sizing: border-box;
-            border: 0.02rem solid #000;
+            border: 0.01rem solid #000;
             margin: 0.1rem 0;
         }
     }

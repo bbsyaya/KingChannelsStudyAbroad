@@ -24,7 +24,7 @@
         学生想入读美国的常青藤名校，前期没有美国留学的经历，英语听说读写能力没有全方位的提高，基本上是不现实的（被录取的概率很小）。海外一年的本科期间留学，不仅让学生能够是否要出国长期留学，更重要的是未能够为未来就读美国名校打下坚实的基础。
       </section>
 
-      <h3>
+      <h3 style="margin-top:0.2rem;">
         <span class="m-study-new-act-fillrect"></span> 修取相应学分，并可进一步获得海外学位
       </h3>
       <p>
@@ -68,7 +68,7 @@
       <span><span class="m-study-new-act-rect"></span>未来可以更好的工作和职业发展</span>
     </section>
 
-    <section class="m-aboutus-setbase" style="border-bottom:0.01rem solid #a1a1a1">
+    <section class="m-aboutus-setbase" style="border-bottom:1px solid #a1a1a1">
       <section class="m-aboutus-intro">
         大学学习期间出国进行一年的深造，对接下来的工作帮助很多，为升职、加薪都打下坚实基础。
       </section>

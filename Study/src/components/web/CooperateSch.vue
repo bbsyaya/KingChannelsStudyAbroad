@@ -82,27 +82,18 @@ export default {
         this.getSchoolList(this.defaultType);
     },
     getSchoolList(type){
-        /*this.$http.get('/frontend/college',{
-            params:{
-                keywords:this.searchKey,
-                type:this.defaultType
-            }
-        }).then((res)=>{
-//              console.log(res.data.data);
-            this.schoolListDatas = res.data.data.rows;
-        })*/
-          //请求全部的时候,不需要传参数
-		if(type == '全部'){
-			this.$http.get(`/frontend/college`)
-				.then((res)=>{
-					this.schoolListDatas = res.data.data.rows;
-				})
-		}else{
-			this.$http.get(`/frontend/college?type=${type}`)
-				.then((res)=>{
-					this.schoolListDatas = res.data.data.rows;
-				})
-		}
+      //请求全部的时候,不需要传参数
+  		if(type == '全部'){
+  			this.$http.get(`/frontend/college`)
+  				.then((res)=>{
+  					this.schoolListDatas = res.data.data.rows;
+  				})
+  		}else{
+  			this.$http.get(`/frontend/college?type=${type}`)
+  				.then((res)=>{
+  					this.schoolListDatas = res.data.data.rows;
+  				})
+  		}
     },
 	  //搜索
 	  getSearchResult(keywords){

@@ -25,13 +25,16 @@
     	.flex(flex-start);
     	height: 0.42rem;
     	width: 100%;
-    	margin: 0.1rem 0 0.2rem 0;
+    	margin: 0.1rem 0 0.2rem 0.1rem;
+        font-size: 0.2rem;
+
     	span {
     		margin-right: 0.1rem;
     		border-radius: 0.05rem;
     		background: @primary;
             padding: 0.02rem 0.1rem;
-            color:white
+            color:white;
+            
     	}
 
     	input {
@@ -39,6 +42,7 @@
     		width: 2rem;
     		border: 0.03rem solid @primary;
 			outline: none;
+            border-radius: 0;
     	}
 
     	i {
@@ -49,6 +53,7 @@
     		color:white;
     		text-align: center;
     		line-height: 0.33rem;
+            padding: 0 0.1rem
     	}
     }
 
@@ -101,7 +106,7 @@
     	border-collapse: collapse;
     	th,td {
     		height: 0.4rem;
-    		border: 0.01rem solid #999;
+    		border: 1px solid #999;
     	}
     	th {
     		background: #00afe9;

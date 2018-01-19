@@ -89,7 +89,7 @@ export default {
   	 * @作者     王柳
   	 * @日期     2017-11-07
   	 */
-		selectChange(item,index){
+	  selectChange(item,index){
 		//  		console.log(item);
 			this.index = index;
 			// console.log(this.index);
