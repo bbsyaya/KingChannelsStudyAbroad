@@ -1,11 +1,11 @@
 <template>
 	<div class='capacity-container'>
 		<h3 class="title">
-			公司能力
+			公司资质
 			<!--<span class="subhead">测试文字</span>-->
 		</h3>
 		<div class="capacity-main">
-            <img src="/static/image/NENGLI.jpg" height="469" width="1219"/>
+            <img src="/static/image/131456.png" height="469" width="1219"/>
         </div>
         <!--<div class="capacity-main-one">-->
 				<!--<div class="capacity-one-list">-->

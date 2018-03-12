@@ -1,7 +1,7 @@
 <template>
   <header class="m-header">
      <section class="m-header-content">
-       <section class="m-logo">
+       <section class="m-logo" @click="$router.push('/mobile/index')">
          <img src="../../../assets/mobile-images/logo.png">
        </section>
 
@@ -17,7 +17,7 @@
                 <Option value="1" >夏校</Option>
                 <Option value="2" >交换生院校</Option>
                 <Option value="3" >专升本院校</Option>
-                <Option value="4" >直升</Option>
+                <Option value="4" >升学</Option>
                 <Option value="5" >插班生</Option>
               </Select>
             </section>

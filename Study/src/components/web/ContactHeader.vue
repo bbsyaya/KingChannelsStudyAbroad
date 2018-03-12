@@ -6,19 +6,55 @@
     <div class="cooperate-text">
       <h4>地址信息</h4>
       <div class="cooperate-text-main">
-        <h5 class=" text-bold">北京总部</h5>
-        <p class="text-bold">中新金桥数字科技（北京）有限公司</p>
-        <p>公司总机：+86 10 82938421 / 82938422</p>
-        <p>咨询部分机： 608 / 803</p>
-        <p>党政知识服务事业部分机：201 / 816</p>
-        <p class="text-bold">中新金桥信息技术（北京）有限公司</p>
-        <p>公司总机：+86 10 82783029 / 82784500</p>
-        <p>市场部分机：803 / 832</p>
-        <p>技术部分机：833</p>
-        <p>公司传真：+86 10 82781332</p>
-        <p>公司地址：北京市海淀区建材城西路31号B座4层西区</p>
-        <p>邮&emsp;&emsp;编 ：100096</p>
+        <p class="text-bold">中新金桥 北京（Beijing HQ）</p>
+        <p>联系电话（Tel）：+8601-82938420</p>
+        <p>公司网址（Web）：www.kingchannels.com</p>
+        <p>邮件地址（Email）：sales@kingchannels.com</p>
+        <p>传真（Fax）：+8601-82781332</p>
+        <p>邮编（Zip code）：100096</p>
+        <br>
+        <p class="text-bold">KingChannels LLC</p>
+        <p>TEL：+1 425-614-9123</p>
+        <p>Email：usasales@kingchannels.com</p>
+        <p>Address：12613 SE 4th PL Bellevue WA 98005</p>
+        <p>Zip code：98005</p>
+        <br>
+
+        <p class="text-bold">中新金桥 重庆  教育基地</p>
+        <p>联系电话（Tel）：</p>
+        <p>公司网址（Web）：</p>
+        <p>邮件地址（Email）：</p>
+        <p>传真（Fax）：</p>
+        <p>邮编（Zip code）：</p>
+        <br>
+
+        <p class="text-bold">中新金桥 广州分公司</p>
+        <p>联系电话（Tel）：</p>
+        <p>公司网址（Web）：</p>
+        <p>邮件地址（Email）：</p>
+        <p>传真（Fax）：</p>
+        <p>邮编（Zip code）：</p>
+        <br>
+
+        <p class="text-bold">中新金桥 南京分公司</p>
+        <p>联系电话（Tel）：</p>
+        <p>公司网址（Web）：</p>
+        <p>邮件地址（Email）：</p>
+        <p>传真（Fax）：</p>
+        <p>邮编（Zip code）：</p>
+        <br>
+
+        <p class="text-bold">中新金桥 成都分公司</p>
+        <p>联系电话（Tel）：</p>
+        <p>公司网址（Web）：</p>
+        <p>邮件地址（Email）：</p>
+        <p>传真（Fax）：</p>
+        <p>邮编（Zip code）：</p>
+        <br>
       </div>
+
+
+
     </div>
   </div>
 </template>
@@ -87,6 +123,7 @@ export default {
       padding: 5px 10px 0;
       height: 370px;
       border-bottom: 1px solid #010101;
+      overflow-y: auto;
       h5 {
         font-size: 12px;
         height: 22px;

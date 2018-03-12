@@ -1,23 +1,42 @@
 <template>
   <div class="intro-all">
     <div class="intro-left">
-      <div class="intro-title">
-        <p>简介</p>
-      </div>
-      <div class="intro-text">
-       <!-- <div class="intro-text-one">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.
+        <div class="intro-title">
+          <p>简介</p>
         </div>
-        <div class="intro-text-two">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.
+        <div class="intro-text">
+           <!-- <div class="intro-text-one">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.
+            </div>
+            <div class="intro-text-two">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.
+            </div>
+            <div class="intro-text-three">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.
+            </div>-->
+    		  <div class="intro-text-one">
+    			  &emsp;&emsp;{{introductions}}
+    		  </div>
         </div>
-        <div class="intro-text-three">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.
-        </div>-->
-		  <div class="intro-text-one">
-			  &emsp;&emsp;{{introductions}}
-		  </div>
-      </div>
+
+        <div class="intro-title">
+          <p>适合人群</p>
+        </div>
+
+        <div class="intro-text">
+           <!-- <div class="intro-text-one">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.
+            </div>
+            <div class="intro-text-two">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.
+            </div>
+            <div class="intro-text-three">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.
+            </div>-->
+          <div class="intro-text-one">
+            &emsp;&emsp;{{target}}
+          </div>
+        </div>
     </div>
     <div class="intro-right">
       <Carousel autoplay v-model="sliderDefault" trigger="hover" arrow="never" :autoplay-speed="4000" class="slider-container">
@@ -47,14 +66,16 @@ export default {
 		//banner介绍文字
 		introductions:'',
 		//根据路由找对应的ID,默认为1
-		queryType:1
+		queryType:1,
+    target:'',
     }
   },
     methods:{
 	    getIntro(id){
 		    this.$http.get(`/frontend/category/info?cateId=${id}`)
 			    .then((res)=>{
-				     this.introductions = res.data.data.info.introduce;
+             this.introductions = res.data.data.info.introduce;
+				     this.target = res.data.data.info.target;
 //                    console.log(res.data.data.info);
 			    })
 	    },
@@ -93,11 +114,12 @@ export default {
 // @media screen and (min-width: 1220px) {
   .intro-all {
     height: 402px;
+    border-bottom: 1px solid black;
+    // overflow: auto;
     .intro-left {
       float: left;
       width: 65.73%;
       margin-right: 6px;
-      border-bottom: 1px solid black;
       .intro-title {
         height: 32px;
         line-height: 32px;
@@ -110,7 +132,7 @@ export default {
       }
       .intro-text {
         font-size: 16px;
-        height: 350px;
+        height: auto;
         margin: 10px 0;
         .intro-text-two {
           margin: 34px 0;

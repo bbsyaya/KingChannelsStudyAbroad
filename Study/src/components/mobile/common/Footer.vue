@@ -2,20 +2,20 @@
   <footer class="m-footer">
      <section class="footer-content">
         <p>友情链接：&nbsp;&nbsp;百度 &nbsp;|&nbsp; 搜狐 &nbsp;|&nbsp; 新浪中国</p>
-        <p>咨询热线：010-82793029-XXX</p>
+        <p>咨询热线：010-82783029  010-82784500</p>
         <p>公司名称：中新金桥信息技术（北京）有限公司</p>
         <div class="m-footer-place"></div>
-        <p>中文地址：Kingchannels,American office</p>
-        <p>TEL：+1-（425）6149123</p>
-        <p>Email：usasales@kingchannels.com</p>
-        <p>Address：12505 SE 4th PL Bellevue, WA, USA Zip</p>
+        <p>中文地址：中新金桥 北京（Beijing HQ）</p>
+        <p>TEL：+8601-82938420</p>
+        <p>Email：sales@kingchannels.com</p>
+        <p>Address：www.kingchannels.com</p>
         <p>code：98005</p>
         <div class="m-footer-place"></div>
-        <p>Chinese address：Kingchannels,American office</p>
-        <p>TEL：+1-（425）6149123</p>
+        <p>Chinese address：KingChannels LLC</p>
+        <p>TEL：+1 425-614-9123</p>
         <p>Email：usasales@kingchannels.com</p>
-        <p>Address：12505 SE 4th PL Bellevue, WA, USA Zip</p>
-        <p>code：98005</p>
+        <p>Address：12613 SE 4th PL Bellevue WA 98005</p>
+        <p>Zip code：98005</p>
 
         <ul class="m-footer-icons">
           <li>

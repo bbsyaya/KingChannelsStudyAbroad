@@ -5,7 +5,7 @@
 			<!--<span class="subhead">测试文字</span>-->
 		</h3>
     <ul class="perfecture-list">
-      <li class="perfecture-each" v-for="(item,index) in dataList" :key="item.cname+index">
+      <li class="perfecture-each" v-for="(item,index) in dataList" style="width:23.5%" :key="item.cname+index">
         <div @click="jumpTo(index)" class="perfecture-each-bg">
           <img :src="item.cover"  alt="背景图">
           <div class="perfecture-each-intro">
@@ -71,7 +71,8 @@ export default {
     }
     .perfecture-each {
       float: left;
-      width: 228px;
+      width: 23.5% !important;
+      min-width: 228px;
       height: 480px;
       margin-left: 20px;
 

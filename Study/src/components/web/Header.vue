@@ -8,7 +8,7 @@
           <Option value="1" style="font-size: 14px!important">夏校</Option>
           <Option value="2" style="font-size: 14px!important">交换生院校</Option>
           <Option value="3" style="font-size: 14px!important">专升本院校</Option>
-          <Option value="4" style="font-size: 14px!important">直升</Option>
+          <Option value="4" style="font-size: 14px!important">升学</Option>
           <Option value="5" style="font-size: 14px!important">插班生</Option>
         </Select>
         <input type="text" class="search-input" @keyup.enter="searchMethod" v-model="searchKey">
@@ -27,7 +27,7 @@
       <li :class="this.nav == 5?'selected':''" @click="$router.push({path:'/summersch',query:{id:1}})">夏校</li>
       <li :class="this.nav == 6?'selected':''" @click="$router.push({path:'/exchangestu',query:{id:2}})">交换生</li>
       <li :class="this.nav == 7?'selected':''" @click="$router.push({path:'/undergraduate',query:{id:3}})">专升本</li>
-      <li :class="this.nav == 8?'selected':''" @click="$router.push({path:'/ueec',query:{id:4}})">直升</li>
+      <li :class="this.nav == 8?'selected':''" @click="$router.push({path:'/ueec',query:{id:4}})">升学</li>
       <li :class="this.nav == 9?'selected':''" @click="$router.push({path:'/freshman',query:{id:5}})">插班生</li>
       <li :class="this.nav == 10?'selected':''" @click="$router.push('/contact')">联系我们</li>
     </ul>
@@ -119,8 +119,8 @@ export default {
           query: {
               keywords: this.searchKey,
               type:this.searchType,
-			  id:this.searchType
-          }
+			    id:this.searchType
+        }
       })
     }
   },
@@ -232,6 +232,7 @@ export default {
         display: inline-block;
         margin-top: 21px;
         background: url('/static/image/erweima.png') no-repeat 100%;
+        background-size:100% 100%;
         cursor: pointer;
       }
       .tel {

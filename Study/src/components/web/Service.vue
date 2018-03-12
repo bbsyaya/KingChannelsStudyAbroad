@@ -5,27 +5,6 @@
       <ul>
         <li>
           <div class="banner-img">
-              <img src="/static/image/bannerkuai1.png" height="117" width="135"/>
-          </div>
-          <p class="banner-title">海外培训</p>
-          <ul class="banner-intro-list">
-            <li>英语培训</li>
-            <li>海外生活培训</li>
-            <li>签证培训</li>
-          </ul>
-        </li>
-        <li>
-          <div class="banner-img">
-              <img src="/static/image/bannerkuai2.png" height="117" width="135"/>
-          </div>
-          <p class="banner-title">海外服务</p>
-          <ul class="banner-intro-list">
-            <li>海外学校协助选择和申请</li>
-            <li>出国期间全程跟踪服务</li>
-          </ul>
-        </li>
-        <li>
-          <div class="banner-img">
               <img src="/static/image/bannerkuai3.png" height="117" width="135"/>
           </div>
           <p class="banner-title">择校咨询</p>
@@ -38,15 +17,42 @@
             <li>申请结果反馈</li>
           </ul>
         </li>
+
+
         <li>
           <div class="banner-img">
-              <img src="/static/image/bannerkuai4.png" height="117" width="135"/>
+              <img src="/static/image/bannerkuai1.png" height="117" width="135"/>
           </div>
-          <p class="banner-title">海外培训</p>
+          <p class="banner-title">语言培训</p>
           <ul class="banner-intro-list">
             <li>英语培训</li>
             <li>海外生活培训</li>
             <li>签证培训</li>
+          </ul>
+        </li>
+        
+        
+        <li>
+          <div class="banner-img">
+              <img src="/static/image/bannerkuai4.png" height="117" width="135"/>
+          </div>
+          <p class="banner-title">留学培训</p>
+          <ul class="banner-intro-list">
+            <li>英语培训</li>
+            <li>海外生活培训</li>
+            <li>签证培训</li>
+          </ul>
+        </li>
+
+
+        <li>
+          <div class="banner-img">
+              <img src="/static/image/bannerkuai2.png" height="117" width="135"/>
+          </div>
+          <p class="banner-title">海外服务</p>
+          <ul class="banner-intro-list">
+            <li>海外学校协助选择和申请</li>
+            <li>出国期间全程跟踪服务</li>
           </ul>
         </li>
       </ul>

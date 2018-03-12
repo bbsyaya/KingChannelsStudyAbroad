@@ -3,20 +3,20 @@
 		<div class="footer-top">
 			<ul class="footer-one">
 				<li>友情链接：<a href="#">百度</a><a href="#">搜狐</a><a href="#">新浪中国</a></li>
-				<li>咨询热线：010-82793019-xxx</li>
+				<li>咨询热线：010-82783029  010-82784500 </li>
 				<li>公司名称：中新金桥信息技术（北京）公司有限</li>
 			</ul>
 			<ul class="footer-two">
-				<li>中文地址：中新金桥信息技术（北京）</li>
-				<li>TEL：+1-(425) 6149123</li>
-				<li>Email：xxxxx@kingchannels.cn</li>
-				<li>address：xxxxx@kingchannels.cn</li>
+				<li>中文地址：中新金桥 北京（Beijing HQ）</li>
+				<li>TEL：+8601-82938420</li>
+				<li>Email：sales@kingchannels.com</li>
+				<li>address：www.kingchannels.com</li>
 			</ul>
 			<ul class="footer-three">
-				<li>中文地址：中新金桥信息技术（北京）</li>
-				<li>TEL：+1-(425) 6149123</li>
-				<li>Email：xxxxx@kingchannels.cn</li>
-				<li>address：xxxxx@kingchannels.cn</li>
+				<li>Chinese address：KingChannels LLC</li>
+				<li>TEL：+1 425-614-9123</li>
+				<li>Email：usasales@kingchannels.com</li>
+				<li>Address：12613 SE 4th PL Bellevue WA 98005</li>
 			</ul>
 		</div>
 		<div class="footer-bottom">

@@ -25,9 +25,11 @@
           </div>
           
           <ul class="academy-ranking-list">
-            <li v-for="(item,index) in zhRankingDatas" :key='item.id+index'>
-              {{item.name}}
-            </li>
+            <a :href="item.url" v-for="(item,index) in zhRankingDatas" target="_blank">
+                <li :key='item.id+index'>
+                  {{item.name}}
+               </li>
+             </a> 
           </ul>
         </div>
         <div>
@@ -39,9 +41,12 @@
           
 
             <ul class="academy-ranking-list">
-            <li v-for="(item,index) in wlRankingDatas" :key='item.id+index'>
-              {{item.name}}
-            </li>
+
+            <a :href="item.url" v-for="(item,index) in wlRankingDatas" target="_blank">
+                <li :key='item.id+index'>
+                  {{item.name}}
+               </li>
+             </a> 
           </ul>
 
         </div>
@@ -54,10 +59,12 @@
           
 
             <ul class="academy-ranking-list">
-            <li v-for="(item,index) in jsRankingDatas" :key='item.id+index'>
-              {{item.name}}
-            </li>
-          </ul>
+               <a :href="item.url" v-for="(item,index) in jsRankingDatas" target="_blank">
+                  <li :key='item.id+index'>
+                    {{item.name}}
+                 </li>
+               </a> 
+            </ul>
 
         </div>
       </div>
@@ -82,7 +89,7 @@ export default {
     getHotSchool(){
       this.$http.get('/frontend/college/hotRecommend')
       .then((res)=>{
-              // console.log(res.data.data);
+              console.log(res.data.data);
           this.hotSchoolDatas = res.data.data;
       })
     },
@@ -116,6 +123,7 @@ export default {
           overflow: hidden;
           margin-bottom: 15px;
           margin-right: 20px;
+          font-size: 12px;
           &:nth-child(4n){
 						margin-right: 0;
           }
@@ -152,6 +160,12 @@ export default {
           overflow: hidden;
           margin-bottom: 15px;
         }
+
+        a {
+          color:#666;
+        }
+
+
         
 
         .academy-ranking-list{
@@ -180,6 +194,14 @@ export default {
             margin-bottom: 6px;
           }
         }
+
+        .active {
+          background:#f8b651; 
+        }
+
+        li:not(.active):hover {
+          background: #f8b651;
+        } 
 
         .academy-ranking-title{
           width: 260px;

@@ -18,6 +18,16 @@
         </p>  
     </section>
 
+    <section class="m-study-new-act" style="margin-top:-0.1rem">
+        <span>适合人群</span>
+      </section>
+
+      <section class="m-study-new-act-noimg" style="height: auto;overflow: visible">
+        <p style="-webkit-line-clamp: 100;margin:0.1rem 0">
+          {{schoolDetail.info.target}}
+        </p>  
+    </section>
+
     <!-- 流程 -->
     <section class="m-section">
        <section class="m-section-cont">
@@ -32,7 +42,7 @@
 
 
     <!-- 合作院校 -->
-    <section class="m-section">
+    <section class="m-section" ref="coopUniContent">
        <section class="m-section-cont">
           <b>合作院校</b>
           <span>待提供的软文</span>
@@ -61,7 +71,8 @@
     <section v-for="(item,index) in schoolDetail.colleges.rows">
       <section class="m-xiaxiao-item">
           <section class="m-xiaxiao-item-logo" :style="{background:'url(/static/image/dakuang.jpg)',backgroundPosition:'center',backgroundSize:'contain'}">
-
+               <img :src="item.logo" alt="">
+               <h3>{{item.name}}</h3>
           </section>
           <section class="m-xiaxiao-item-detail">
             <p>{{item.name}} <span>咨询</span></p>
@@ -194,14 +205,21 @@ export default {
         }
       })
       .then((res)=>{
+
          this.schoolDetail = res.data.data;
 
          this.record = parseInt(this.schoolDetail.colleges.totalRows);
-         this.schoolDetail.colleges.rows = this.schoolDetail.colleges.rows.map((item)=>{
-             return Object.assign({},item,{isMajorShow:false})
+
+         this.$nextTick(function() {
+            this.schoolDetail.colleges.rows = this.schoolDetail.colleges.rows.map((item)=>{
+               return Object.assign({},item,{isMajorShow:false})
+           })
+
+            if(this.$route.query.keywords && this.$route.query.keywords != '') {
+               //此时是通过顶部搜索进入这个页面，需要直接定位到学校列表
+               window.scrollTo(0,this.$refs.coopUniContent.offsetTop);
+            }
          })
-
-
       })
     },
 
@@ -242,6 +260,10 @@ export default {
     this.schoolType = this.$route.query.catId || 1;
     this.keywords = this.$route.query.keywords || '';
     this.getSchoolInfo();
+  },
+
+  mounted() {
+    
   },
 
 

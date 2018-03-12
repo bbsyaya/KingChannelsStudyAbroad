@@ -1,12 +1,12 @@
 <template>
 	<div class='capacity-container'>
-		<h3 class="title">
+		<!-- <h3 class="title">
 			公司展示
 			<span class="subhead">教育百强企业，IOS9001认证，国内1000家高校建立合作关系</span>
 		</h3>
 		<div class="capacity-main">
 			<img src="/static/image/NENGLI.jpg" height="469" width="1219"/>
-			<!--<div class="capacity-main-one">
+			<div class="capacity-main-one">
 				<div class="capacity-one-list">
 					<img src="/static/image/nengli1.jpg" alt="">
 
@@ -43,8 +43,8 @@
 					<img src="/static/image/nengli5.jpg" alt="">
 
 				</div>
-			</div>-->
-		</div>
+			</div>
+		</div> -->
 	</div>
 </template>
 

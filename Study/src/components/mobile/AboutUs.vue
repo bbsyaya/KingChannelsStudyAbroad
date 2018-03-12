@@ -7,11 +7,10 @@
     <section class="m-section">
        <section class="m-section-cont">
           <b>关于金桥</b>
-          <span>待提供的软文</span>
        </section>
     </section>
 
-    <section class="m-aboutus-title">
+<!--     <section class="m-aboutus-title">
       <p>中新金桥的短期留学项目通过建立国立高中同海外名校间的直接合作关系，为学生提供半年到一年的美国学习机会，推动教育全球化发展。</p>
     </section>
 
@@ -72,7 +71,7 @@
       <section class="m-aboutus-intro">
         大学学习期间出国进行一年的深造，对接下来的工作帮助很多，为升职、加薪都打下坚实基础。
       </section>
-    </section>
+    </section> -->
 
 
 
@@ -85,18 +84,31 @@
 
 
 
+    <section class="m-section">
+       <section class="m-section-cont">
+          <b>公司能力</b>
+       </section>
+    </section>
+
+     <section class="m-aboutus-company-abs">
+          <p style="line-height:0.4rem">同国内300家高校建立合作关系</p>
+          <p style="line-height:0.4rem">教育百强企业</p>
+          <p style="line-height:0.4rem">ISO 9001认证</p>
+    </section>
+
+
+
 
     <!-- 公司能力 -->
     <section class="m-section" style="margin-top:0.05rem">
        <section class="m-section-cont">
-          <b>公司能力</b>
-          <span>测试文字</span>
+          <b>公司资质</b>
 
        </section>
     </section>
 
     <section class="m-company-power">
-      <section class="m-company-power-section1">
+     <!--  <section class="m-company-power-section1">
         <ul class="m-company-power-section1-left">
           <li>
             <img src="../../assets/mobile-images/nengli1.png" alt="">
@@ -143,13 +155,15 @@
         <li>
           <img src="../../assets/mobile-images/nengli9.png" alt=""><span class="m-item-metion">说明文字</span>
         </li>
-      </ul>
+      </ul> -->
+
+      <img src="/static/image/32131231231.png" alt="">
     </section>
 
 
 
-    <!-- 留学专区 -->
-    <section class="m-section">
+    <!-- 留学特色 -->
+<!--     <section class="m-section">
        <section class="m-section-cont">
           <b>留学特色</b>
           <span>测试文字</span>
@@ -162,7 +176,6 @@
       <li v-for="(item,index) in 4" :style="{marginRight: index % 2 == 0 ? '0.2rem':0}">
         <figure>
           <img src="../../assets/mobile-images/11.png" alt="">
-          <!-- <div>专升本</div> -->
         </figure>
 
         <h3>
@@ -178,8 +191,6 @@
 
 
 
-    <!-- 更多特色 -->
-    
 
     <section class="m-study-new-act" style="margin:0.1rem 0">
       <span>最新动态</span>
@@ -237,7 +248,7 @@
 
         <i style="right:0">...</i>
       </p>
-    </section>
+    </section> -->
 
 
   </section>

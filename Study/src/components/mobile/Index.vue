@@ -101,7 +101,7 @@
           <div>{{item.cname}}</div>
         </figure>
 
-        <h3>
+        <h3 @click="jumpTo(index)">
           <span>适合人群</span>
           <i>MORE</i>
         </h3>
@@ -129,6 +129,7 @@
         <figure>
           <img src="../../assets/mobile-images/kuang.png" alt="">
           <img :src="item.logo" :alt="item.name">
+          <!-- <p>{{item.name}}</p> -->
         </figure>
         <section >
            <h3>{{item.name}}</h3>
@@ -147,7 +148,7 @@
        </section>
 
        <ul class="m-schools-top-list">
-          <li v-for="(item,index) in zhRankingDatas" @click="zhRankingDatasIndex = index" :class="{'m-hot-active':index === zhRankingDatasIndex ? true:false}">
+          <li v-for="(item,index) in zhRankingDatas" @click="zhRankingDatasIndex = index;toHostSite(item.url)" :class="{'m-hot-active':index === zhRankingDatasIndex ? true:false}">
             {{item.name}}
           </li>
        </ul>
@@ -159,7 +160,7 @@
        </section>
 
        <ul class="m-schools-top-list">
-          <li v-for="(item,index) in wlRankingDatas" @click="wlRankingDatasIndex = index" :class="{'m-hot-active':index === wlRankingDatasIndex ? true:false}">
+          <li v-for="(item,index) in wlRankingDatas" @click="wlRankingDatasIndex = index;toHostSite(item.url)" :class="{'m-hot-active':index === wlRankingDatasIndex ? true:false}">
             {{item.name}}
           </li>
        </ul>
@@ -171,7 +172,7 @@
        </section>
 
        <ul class="m-schools-top-list">
-          <li v-for="(item,index) in jsRankingDatas" @click="jsRankingDatasIndex = index" :class="{'m-hot-active':index === jsRankingDatasIndex ? true:false}">
+          <li v-for="(item,index) in jsRankingDatas" @click="jsRankingDatasIndex = index;toHostSite(item.url)" :class="{'m-hot-active':index === jsRankingDatasIndex ? true:false}">
             {{item.name}}
           </li>
        </ul>
@@ -189,30 +190,30 @@
     </section>
 
     <section class="m-company-power">
-      <section class="m-company-power-section1">
+<!--       <section class="m-company-power-section1">
         <ul class="m-company-power-section1-left">
           <li>
             <img src="../../assets/mobile-images/nengli1.png" alt="">
-            <span class="m-item-metion">说明文字</span>
+            
           </li>
           <li>
             <img src="../../assets/mobile-images/nengli2.png" alt="">
-            <span class="m-item-metion">说明文字</span>
+            
           </li>
           <li>
             <img src="../../assets/mobile-images/nengli3.png" alt="">
-            <span class="m-item-metion">说明文字</span>
+            
           </li>
         </ul>
 
         <ul class="m-company-power-section1-right">
           <li>
             <img src="../../assets/mobile-images/nengli4.png" alt="">
-            <span class="m-item-metion">说明文字</span>
+            
           </li>
           <li>
             <img src="../../assets/mobile-images/nengli5.png" alt="">
-            <span class="m-item-metion">说明文字</span>
+            
           </li>
         </ul>
       </section>
@@ -220,23 +221,24 @@
       <section class="m-company-power-section2">
         <section class="m-company-power-section2-left">
           <img src="../../assets/mobile-images/11.jpg" alt="">
-          <span class="m-item-metion">说明文字</span>
+          
         </section>
         <ul class="m-company-power-section2-right">
           <li>
-            <img src="../../assets/mobile-images/nengli6.png" alt=""><span class="m-item-metion">说明文字</span></li>
+            <img src="../../assets/mobile-images/nengli6.png" alt=""></li>
           <li>
-            <img src="../../assets/mobile-images/nengli7.png" alt=""><span class="m-item-metion">说明文字</span></li>
+            <img src="../../assets/mobile-images/nengli7.png" alt=""></li>
         </ul>
       </section>
 
       <ul class="m-company-power-section3">
         <li>
-          <img src="../../assets/mobile-images/nengli8.png" alt=""><span class="m-item-metion">说明文字</span></li>
+          <img src="../../assets/mobile-images/nengli8.png" alt=""></li>
         <li>
-          <img src="../../assets/mobile-images/nengli9.png" alt=""><span class="m-item-metion">说明文字</span>
+          <img src="../../assets/mobile-images/nengli9.png" alt="">
         </li>
-      </ul>
+      </ul> -->
+      <img src="/static/image/32131231231.png" alt="">
     </section>
 
 
@@ -267,6 +269,8 @@ export default {
       newOffer:{},
       dataList:[],
       coverList:['/static/image/11.png','/static/image/22.png','/static/image/33.png','/static/image/44.png','/static/image/55.png'],
+
+      dataUrl:['./summersch','./exchangestu','./undergraduate','./ueec','./freshman'],
 
       hotSchoolDatas:[],
 
@@ -306,8 +310,12 @@ export default {
     },
     // 跳转到指定页面
     jumpTo(index){
-//        console.log(index);
-        this.$router.push({path:this.dataUrl[index],query:{id:index+1}});
+        this.$router.push({path:'/mobile/xiaxiao',query:{catId:index+1}});
+    },
+
+    //跳转到每个学校的官网
+    toHostSite(url) {
+       window.open(url);
     },
 
 
@@ -329,7 +337,7 @@ export default {
     //了解更多页面跳转
     learnMore(url){
         window.open(url);
-    }  
+    }, 
 
   },
   created(){

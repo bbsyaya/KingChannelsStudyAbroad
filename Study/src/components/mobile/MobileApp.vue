@@ -12,7 +12,7 @@
          </figure>
          <p>立即报名</p>
        </li>
-       <a title="点击这里咨询客服" href="http://wpa.qq.com/msgrd?v=3&amp;uin=179158105&amp;site=www.cactussoft.cn&amp;menu=yes" target="_blank">
+       <a title="点击这里咨询客服"  href="mqqwpa://im/chat?chat_type=wpa&uin=179158105&version=1&src_type=web&web_src=liuxue.jqweike.com" target="_blank">
           <li>
            <figure>
              <img src="/static/image/zaixian.png" alt="">

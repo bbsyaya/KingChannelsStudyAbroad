@@ -69,7 +69,7 @@ export default {
          title:'交换生',
        },
        {
-         title:'直升',
+         title:'升学',
        },
        {
          title:'插班生',
@@ -135,6 +135,21 @@ export default {
       });
     }
   },
+
+  mounted() {
+    let path = this.$route.path;
+    if(path.indexOf('index') !== -1 ) {
+      this.navActiveIndex = 0;
+    }else if(path.indexOf('coopUni') !== -1) {
+      this.navActiveIndex = 1;
+    }else if(path.indexOf('xiaxiao') !== -1) {
+      this.navActiveIndex = 2;
+    }else if(path.indexOf('server') !== -1) {
+      this.navActiveIndex = 3;
+    }else if(path.indexOf('aboutUs') !== -1 || path.indexOf('contactUs') !== -1) {
+      this.navActiveIndex = 4;
+    }
+   },
 
   created(){
   }

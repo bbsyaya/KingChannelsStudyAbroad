@@ -230,13 +230,20 @@ export default {
         created() {
            this.isPC = isPC();
 
-           if(!this.isPC) this.$router.push('/mobile')
+           if(!this.isPC && location.href.indexOf('mobile') == -1) {
+              this.$router.push('/mobile');
+           }else if(this.isPC && location.href.indexOf('mobile') !== -1){
+              this.$router.push('/');
+           }
         }
 
 }
 
 </script>
 <style lang="less">
+.perfecture-each {
+  width: 23.5% !important;
+}
 .clearfix:after {
         display: block;
         clear: both;
@@ -427,6 +434,7 @@ export default {
 
 .apply-for-btn {
         left: 0;
+        z-index: 99;
         background-color: #00688b;
         border-radius: 0 4px 0 0;
         overflow: hidden;
@@ -434,6 +442,7 @@ export default {
 
 .online-service-btn {
         right: 0;
+        z-index: 99;
         height: 76px;
         background-color: #74ad44;
         display: inline-block;
